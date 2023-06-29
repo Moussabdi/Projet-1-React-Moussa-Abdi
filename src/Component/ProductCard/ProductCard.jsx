@@ -8,7 +8,11 @@ import Button from "../Button/Button";
 
 const ProductCard = (props) => {
   const imageProps = props.image;
-  const priceProps = props.price;
+  const onClick = () => {
+    alert("Are you sure want to see the message!", props.title);
+  };
+  const onSignIn = () => {};
+  const onLogout = () => {};
   return (
     <Card>
       <Title>{props.title}</Title>
@@ -19,7 +23,9 @@ const ProductCard = (props) => {
         height={imageProps.height}
       />
       <Text>{props.description}</Text>
-      <Button>{props.label}</Button>
+      <Button onClick={onClick}>{props.label}</Button>
+      <Button onSignIn={onSignIn}>{props.label2}</Button>
+      <Button onLogout={onLogout}>{props.label3}</Button>
     </Card>
   );
 };

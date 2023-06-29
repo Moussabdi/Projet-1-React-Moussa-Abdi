@@ -12,6 +12,7 @@ function App() {
           width: "100px",
           height: "100px",
         }}
+        label="Click here!"
         description="Loremgggggggggggggggqrggggggggggggggr"
       />
     </Container>
