@@ -5,16 +5,19 @@ import Title from "../Title/Title";
 import Image from "../Image/Image";
 import Pokedex from "../../assets/Pokedex.png";
 import Button from "../Button/Button";
-
+import IconButton from "../../../../previewCard/src/Component/IconButton/IconButton";
+import { FaCartPlus } from "react-icons/fa";
+import { useState } from "react";
 const ProductCard = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
   const imageProps = props.image;
   const onClick = () => {
-    alert("Are you sure want to see the message!", props.title);
+    setIsHovered(!isHovered);
   };
-  const onSignIn = () => {};
-  const onLogout = () => {};
+
   return (
     <Card>
+      {JSON.stringify(isHovered)}
       <Title>{props.title}</Title>
       <Image
         src={imageProps.src}
@@ -24,8 +27,7 @@ const ProductCard = (props) => {
       />
       <Text>{props.description}</Text>
       <Button onClick={onClick}>{props.label}</Button>
-      <Button onSignIn={onSignIn}>{props.label2}</Button>
-      <Button onLogout={onLogout}>{props.label3}</Button>
+      <IconButton icon={<FaCartPlus />}>{props.label}</IconButton>
     </Card>
   );
 };
