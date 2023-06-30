@@ -2,11 +2,9 @@ import React from "react";
 import Card from "../Card/Card";
 import Title from "../Title/Title";
 import Image from "../Image/Image";
-import Pokedex from "../../assets/Pokedex.png";
-import Bulbasaur from "../../assets/Bulbasaur.png";
 import { useState } from "react";
 import "./ProductCard.css";
-import PokemonsList from "../Pokemons/PokemonsList";
+
 const NO_IMAGE_SELECTED = 0;
 const ProductCard = (props) => {
   const [onMouseEnter, onMouseLeave] = useState(NO_IMAGE_SELECTED);
@@ -22,163 +20,145 @@ const ProductCard = (props) => {
   return (
     <div className="grid">
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Golbat</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Golbat.png"
+          alt="Golbat"
           width={imageProps.width}
           height={imageProps.height}
           value={1}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Inner Focus Infiltrator Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Bulbasaur</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Bulbasaur.png"
+          alt="Bulbasaur"
           width={imageProps.width}
           height={imageProps.height}
           value={2}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Overgrow Chlorophyll Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Lvysaur</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Lvysaur.png"
+          alt="Lvysaur"
           width={imageProps.width}
           height={imageProps.height}
           value={3}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Overgrow Chlorophyll Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Venausaur</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Venusaur.png"
+          alt="Venusaur"
           width={imageProps.width}
           height={imageProps.height}
           value={4}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Overgrow Venusaur Chlorophyll Hidden Ability Thick Fat
+          Mega Venusaur
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Charmander</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Charmander.png"
+          alt="Charmander"
           width={imageProps.width}
           height={imageProps.height}
           value={5}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Blaze Solar Power Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Charmeleon</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Charmeleon.png"
+          alt="Charmeleon"
           width={imageProps.width}
           height={imageProps.height}
           value={6}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Blaze Solar Power Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Golduck</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Golduck.png"
+          alt="Golduck"
           width={imageProps.width}
           height={imageProps.height}
           value={7}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Damp or Cloud Nine Swift Swim Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Alakazam</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Alakazam.png"
+          alt="Alakazam"
           width={imageProps.width}
           height={imageProps.height}
           value={8}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Synchronize or Inner Focus Alakazam Magic Guard Hidden
+          Ability Trace Mega Alakazam
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Machamp</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Machamp.png"
+          alt="Machamp"
           width={imageProps.width}
           height={imageProps.height}
           value={9}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Guts or No GuardGen IV+ Steadfast Hidden Ability
         </Image>
       </Card>
       <Card>
-        <Title>{props.title}</Title>
+        <Title>Victreebel</Title>
         <Image
-          src={imageProps.src}
-          alt={imageProps.alt}
+          src="/src/assets/Victreebel.png"
+          alt="Victreebel"
           width={imageProps.width}
           height={imageProps.height}
           value={10}
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam
-          fuga minima praesentium. Voluptatum temporibus ducimus numquam est!
-          Facilis adipisci sint quos facere reprehenderit fuga?
+          Abilities : Chlorophyll Gluttony Hidden Ability
         </Image>
       </Card>
     </div>
