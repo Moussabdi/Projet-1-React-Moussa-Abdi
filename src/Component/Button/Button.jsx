@@ -7,11 +7,7 @@ const Button = (props) => {
   const classnames = ["button"];
   if (props.className) classnames.push(props.className);
   return (
-    <button
-      onClick={props.onClick}
-      className={classnames.join(" ")}
-      type={type}
-    >
+    <button className={classnames.join(" ")} type={type}>
       {props.children}
     </button>
   );
