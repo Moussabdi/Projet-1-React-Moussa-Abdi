@@ -30,7 +30,7 @@ const ProductCard = (props) => {
           active={onMouseEnter}
           onClick={handleClick}
         >
-          Abilities : Inner Focus Infiltrator Hidden Ability
+          Abilities : Inner Focus Infiltrator, Hidden Ability
         </Image>
       </Card>
       <Card>
